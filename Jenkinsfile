@@ -46,7 +46,7 @@ pipeline {
           }
           sh """
           cd /var/www/html/
-          jar -xvf webapp.war
+          ls -lrth
           """
         }
     }
@@ -61,7 +61,7 @@ pipeline {
           }
           sh """
           cd /var/www/html/
-          jar -xvf webapp.war
+          ls -lrth
           """
         }
     }
@@ -86,7 +86,7 @@ pipeline {
           sh """
           mkdir -p /var/www/html
           cd /var/www/html/
-          jar -xvf webapp.war
+          ls -lrth 
           """
         }
     }
